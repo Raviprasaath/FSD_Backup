@@ -50,6 +50,21 @@ class LinkedList{
 }
 
 public class MiddleoftheLinkedList876 {
+    ListNode head;
+    ListNode tail;
+    public class ListNode {
+
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { 
+            this.val = val; 
+        }
+        ListNode(int val, ListNode next) { 
+            this.val = val; 
+            this.next = next; 
+        }        
+    }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.add(1);
@@ -58,9 +73,8 @@ public class MiddleoftheLinkedList876 {
         list.add(4);
         list.add(5);
         list.display();
-        // list.middleNode(2);
-
-        list.display();
+        
+//        System.out.println(list.middleNode(head));
         
     }
 }

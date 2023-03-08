@@ -1,17 +1,16 @@
-package Testing;
+package Leetcode;
 
-public class roughwork2 {
-  public static void main(String[] args) {
-     int [] arr = {4,5,2,7};
-     sortArrayByParityII(arr); 
-     for (int i=0; i<arr.length; i++) {
-      System.out.print(arr[i]+" ");
-     }
-  }
-
-  public static int[] sortArrayByParityII(int[] nums) {
-    int n = nums.length;
-
+public class SortArrayByParityII_922 {
+    public static void main(String[] args) {
+        int [] arr = {4,5,2,7};
+        sortArrayByParityII(arr); 
+        for (int i=0; i<arr.length; i++) {
+         System.out.print(arr[i]+" ");
+        }
+    }
+   
+    public static int[] sortArrayByParityII(int[] nums) {
+        int n = nums.length;
         int i=0, j=1;
         while ((i < n) && (j < n)) {
             while ((i < n) && (nums[i] %2 == 0)) {
@@ -27,5 +26,5 @@ public class roughwork2 {
             }
         }
         return nums;
-  }
+    }
 }
