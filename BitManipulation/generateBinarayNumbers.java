@@ -26,3 +26,5 @@ public class generateBinarayNumbers {
         }
     }
 }
+
+// Queue question - Assignment Generate Binary Numbers 

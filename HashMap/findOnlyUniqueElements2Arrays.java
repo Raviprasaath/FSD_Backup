@@ -20,8 +20,7 @@ public class findOnlyUniqueElements2Arrays {
         System.out.print(index[i]+" ");
       }
       System.out.println();
-  
-      
+
       HashMap <Integer, Integer> hmap = new HashMap<Integer, Integer>();
       for (int i=0; i<n+m; i++){
         if (hmap.containsKey(index[i])) {
@@ -42,6 +41,7 @@ public class findOnlyUniqueElements2Arrays {
 
 
 /*
+
 [ 1, 45, 5 ,7, 9 , 5]
 
 [ 2,1,5,6,1,9 ]
@@ -49,8 +49,8 @@ public class findOnlyUniqueElements2Arrays {
 1 45 5 7 9 5 2 1 5 6 1 9 
 1 1 1 2 5 5 5 6 7 9 9 45
 
-
 Find only unique elements from these 2 arary .
 
 Output: [2, 6, 7, 45]
+
  */
