@@ -209,20 +209,15 @@ public String displayInArr() {
                     + index + " , Size: " + this.size);
         }
 
+        Node newNode = new Node(data); //   Create new node
 
-//        Create new node
+        Node previousNode = this.getNodeAt(index -1); //    Find previous Node of the index
 
-        Node newNode = new Node(data);
-
-//        Find previous Node of the index
-        Node previousNode = this.getNodeAt(index -1);
-
-//        New node next will be the (next)* of the previousNode
-        Node nextOfPreviousNode = previousNode.next;
+        Node nextOfPreviousNode = previousNode.next; //  New node next will be the (next)* of the previousNode
         newNode.next = nextOfPreviousNode;
 
-//        Privious Node's Next should be newly created node
-        previousNode.next = newNode;
+
+        previousNode.next = newNode; // Privious Node's Next should be newly created node
         this.size += 1;
 
     }

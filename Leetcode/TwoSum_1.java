@@ -1,5 +1,4 @@
 package Leetcode;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TwoSum_1 {
@@ -12,7 +11,7 @@ public class TwoSum_1 {
     public static int[] twoSumUsualMethod(int[] nums, int target) {
         int n = nums.length;
         int [] ans = new int[2];
-        ArrayList <Integer> list = new ArrayList<>();
+        
         for (int i=0; i<n; i++) {
             for (int j=i+1; j<n; j++) {
                 if (nums[i]+nums[j]==target) {
@@ -25,6 +24,7 @@ public class TwoSum_1 {
         }
         return ans;
     }
+    
     public static int[] twoSum(int[] nums, int target) {
         HashMap <Integer, Integer> hmap = new HashMap<>();
         int arr [] = new int[2];

@@ -177,19 +177,20 @@ class nLinkedlist {
 
         nLinkedlist linklist=new nLinkedlist();
 
-        linklist.addfirst(20);
-        linklist.addfirst(30);
-        linklist.addfirst(40);
-        linklist.addfirst(50);
-        linklist.addfirst(70);
-        linklist.addfirst(80);
-        linklist.addfirst(90);
-        linklist.print();
-//
-//        System.out.println();
-//        linklist.addlast(60);
-//        linklist.print();
-//
+        // linklist.addfirst(20);
+        // linklist.addfirst(30);
+        // linklist.addfirst(40);
+        // linklist.addfirst(50);
+        // linklist.addfirst(70);
+        // linklist.addfirst(80);
+        // linklist.addfirst(90);
+        // linklist.print();
+
+    //    System.out.println();
+       linklist.addlast(60);
+       linklist.addlast(100);
+       linklist.print();
+
 //        System.out.println();
 //        linklist.deletefirst();
 //        linklist.print();
@@ -210,9 +211,9 @@ class nLinkedlist {
 //        linklist.deleteNthNodeFromfirst(7);
 //        linklist.print();
 
-        System.out.println();
-        linklist.deleteNthNodeFromlast(7);
-        linklist.print();
+        // System.out.println();
+        // linklist.deleteNthNodeFromlast(7);
+        // linklist.print();
         
 
     }

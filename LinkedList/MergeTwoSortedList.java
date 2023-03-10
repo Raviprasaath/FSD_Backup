@@ -1,13 +1,12 @@
 package LinkedList;
 
-class LinkList{
+class LList{
     Node head;
 
-    public class Node{
+    private class Node{
         int value;
         Node next;
     
-        Node(){}
         Node (int value) {
             this.value = value;
             this.next = null;
@@ -61,8 +60,8 @@ class LinkList{
 
 public class MergeTwoSortedList {
     public static void main(String[] args) {
-        LinkList list1 = new LinkList();
-        LinkList list2 = new LinkList();
+        LList list1 = new LList();
+        LList list2 = new LList();
         list1.add(15);
         list1.add(10);
         list1.add(12);
@@ -77,7 +76,7 @@ public class MergeTwoSortedList {
         list2.add(1);
         list2.display(); 
         System.out.println();
-        list1.head = new LinkList().merge(list1.head, list2.head);
+        list1.head = new LList().merge(list1.head, list2.head);
         list1.display();  
     }
 }

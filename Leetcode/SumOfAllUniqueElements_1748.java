@@ -1,5 +1,4 @@
 package Leetcode;
-import java.util.HashSet;
 import java.util.ArrayList;
 
 public class SumOfAllUniqueElements_1748 {
@@ -7,8 +6,7 @@ public class SumOfAllUniqueElements_1748 {
         int [] nums = {1,2,3,2};
         System.out.print(sumOfUnique(nums));
     }
-    public static int sumOfUnique(int[] nums) {
-        HashSet s = new HashSet();
+    public static int sumOfUnique(int[] nums) {        
         int n = nums.length;
         int sum = 0;
         ArrayList <Integer> list1 = new ArrayList<>();

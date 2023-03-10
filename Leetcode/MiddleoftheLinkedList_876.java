@@ -34,17 +34,17 @@ class LinkedList{
         }
     }
 
-    // public Node middleNode() {
-    //     Node fastPointer = head;
-    //     Node slowPointer = head;
+    public Node middleNode() {
+        Node fastPointer = head;
+        Node slowPointer = head;
 
-    //     while(fastPointer != null && fastPointer.next != null) {
-    //         fastPointer = fastPointer.next.next;
-    //         slowPointer = slowPointer.next;
-    //     }
-    //     head = slowPointer;
-    //     return head;
-    // }
+        while(fastPointer != null && fastPointer.next != null) {
+            fastPointer = fastPointer.next.next;
+            slowPointer = slowPointer.next;
+        }
+        head = slowPointer;
+        return head;
+    }
 }
 
 public class MiddleoftheLinkedList_876 {
@@ -58,7 +58,7 @@ public class MiddleoftheLinkedList_876 {
         list.add(5);
         list.display();
         System.out.println();
-        // list.middleNode();
-        // list.display();
+        list.middleNode();
+        list.display();
    }
 }

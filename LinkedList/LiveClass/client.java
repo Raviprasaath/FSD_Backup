@@ -40,6 +40,7 @@ public class client {
 
 
 //        --------- add at ---------
+        System.out.println("looking ans");
         linkedList.addAt(1, 62);
         System.out.println("size: " + linkedList.size());
         linkedList.display();
