@@ -1,6 +1,6 @@
 
 
-public class bubblesorting {
+public class BubbleSorting {
     public static void main(String [] args){
         int array[]={3,4,6,22,11,5};
         int n = array.length;

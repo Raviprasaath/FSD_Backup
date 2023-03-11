@@ -62,18 +62,44 @@ class LinkingList {
         Node newNode = new Node(num);
         newNode.next = head;
         Node temp = head;
-            while (n -- != 0) {
-                temp = temp.next;
-            } 
-            newNode.next = temp.next;
-            temp.next = newNode;
-
+        
+        while (n -- != 0) {
+            temp = temp.next;
+        } 
+        
+        newNode.next = temp.next;
+        temp.next = newNode;
+        size++;
+        
         return newNode.next;
     }
 
-    // public Node addFromLast (int  num) {
-         
-    // } 
+    public Node addFromLast (int position, int num) {
+        int n = position-1;
+        Node newNode = new Node(num);
+        newNode.next = head;
+
+        Node first = head;
+        Node second = head;
+
+        while (n-- != 0) {
+            first = first.next;
+        }
+
+        while (first != null && first.next != null) {
+            first = first.next;
+            second = second.next;
+        } 
+        newNode.next = second.next;
+        second.next = newNode;
+
+        size++;
+        return newNode.next;
+    }
+
+    
+    
+    
 
 }
 public class AddFirstLastGetFirstLastDelFirstLast {
@@ -93,9 +119,11 @@ public class AddFirstLastGetFirstLastDelFirstLast {
         System.out.println(list.size()); 
         list.display();
         System.out.println();
-        list.addAtFromStart(9, 4);
+        list.addAtFromStart(2, 4);
         list.display();
-        
+        System.out.println();
+        list.addFromLast(4,5);
+        list.display();
 
     }
    

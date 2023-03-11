@@ -35,26 +35,26 @@ class LList{
     }
 
     public Node merge(Node list1, Node list2) {
-        Node temp = new Node(0);
-        Node current = temp;
+        Node newNode = new Node(0);
+        Node temp = newNode;
         
         while (list1 != null && list2 != null) {
             if (list1.value <= list2.value) {
-                temp.next = list1;
+                newNode.next = list1;
                 list1 = list1.next;
             } else {
-                temp.next = list2;
+                newNode.next = list2;
                 list2 = list2.next;
             }
-            temp = temp.next;
+            newNode = newNode.next;
         }
         
         if (list1 ==  null) {
-            temp.next = list2;
+            newNode.next = list2;
         } else if (list2 == null) {
-            temp.next = list1;
+            newNode.next = list1;
         }
-        return current.next;
+        return temp.next;
     }
 }
 
