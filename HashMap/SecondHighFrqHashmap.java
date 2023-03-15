@@ -8,13 +8,17 @@ public class SecondHighFrqHashmap {
 
         HashMap<Integer, Integer> frequencyMap = new HashMap<Integer, Integer>();
 
-        for (int i : array) {
-            if (frequencyMap.containsKey(i)) {
-                frequencyMap.put(i, frequencyMap.get(i) + 1);
-            } else {
-                frequencyMap.put(i, 1); // {5:3, 4:2, 3:1, 2:1, 1:1}
-            }
-        }
+        // for (int i : array) {
+        //     if (frequencyMap.containsKey(i)) {
+        //         frequencyMap.put(i, frequencyMap.get(i) + 1);
+        //     } else {
+        //         frequencyMap.put(i, 1); // {5:3, 4:2, 3:1, 2:1, 1:1}
+        //     }
+        // }
+        for (int i=0; i<array.length; i++) {
+            frequencyMap.put(array[i], frequencyMap.getOrDefault(array[i], 0)+1);
+        } 
+        System.out.println("testing "+frequencyMap);
 
         int first = 0, second = 0;
         // [3,2,1,1,1]

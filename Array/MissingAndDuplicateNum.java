@@ -27,6 +27,8 @@ public class MissingAndDuplicateNum {
             }
         }
         int index2=0;
+        // n*(n+1)/2
+
         for(int i=0; i<list.size()-1; i++){
             if(list.get(i+1)-list.get(i) != 1){
                 index2=list.get(i+1)-1;

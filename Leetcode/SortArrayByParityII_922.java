@@ -3,9 +3,9 @@ package Leetcode;
 public class SortArrayByParityII_922 {
     public static void main(String[] args) {
         int [] arr = {4,5,2,7};
-        sortArrayByParityII(arr); 
+        int arr2[] = sortArrayByParityII(arr); 
         for (int i=0; i<arr.length; i++) {
-         System.out.print(arr[i]+" ");
+         System.out.print(arr2[i]+" ");
         }
     }
    
