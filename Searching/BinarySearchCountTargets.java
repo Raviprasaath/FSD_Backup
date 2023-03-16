@@ -1,12 +1,10 @@
-package Testing;
+package Searching;
 
-
-public class roughwork {
-  	public static void main(String[] args) {
+public class BinarySearchCountTargets {
+    public static void main(String[] args) {
 		int [] array = {2,5,5,5,6,6,8,9,9,9};
 		int target = 9;
-		//2,5,5,5,6,6,8,9,9,9
-		
+	
 		int count = 0;
 		int left = 0;
 		int right = array.length-1;
@@ -24,19 +22,4 @@ public class roughwork {
 		}
 		System.out.print(count);
 	}
-	
-
-	
 }
-
-/*
-2,5,5,5,6,6,8,9,9,9
-
-Target : 6
-
-Output :2
- */
-
-  
-
-
