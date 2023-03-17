@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class SingleNumber_136 {
     public static void main(String[] args) {
         int [] arr = {2,2,1};
-        System.out.println(singleNumberHashMap(arr));
+        // System.out.println(singleNumberHashMap(arr));
         System.out.println(singleNumber(arr));
     }
 

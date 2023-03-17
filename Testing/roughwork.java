@@ -3,39 +3,30 @@ package Testing;
 
 public class roughwork {
   	public static void main(String[] args) {
-		int [] array = {2,5,5,5,6,6,8,9,9,9};
-		int target = 9;
-		//2,5,5,5,6,6,8,9,9,9
-		
-		int count = 0;
-		int left = 0;
-		int right = array.length-1;
-		while (left <= right) {
-			int mid = left + (right-left)/2;
-			if (array[mid] == target) {
-				count++;
-				array[mid]=0;
-				
-			} else if (array[mid]<=target) {
-				left = mid+1;
-			} else {
-				right = mid-1;
-			}
-		}
-		System.out.print(count);
+		int [] array = {4,4,1,3,1,3,2,2,5,5,1,5,2,1,2,3,5,4};
+		int k = 2;
+		System.out.println(maxOperations(array, k));
 	}
-	
+	public static int maxOperations(int[] nums, int k) {
+        int n = nums.length;
+        int sum = 0;
+        int count = 0;
+        for (int i=0; i<n; i++) {
+            for (int j=i+1; j<n; j++) {
+                if (nums[i] <= k) {
+                    sum = nums[i]+nums[j];
+                    if (sum == k) {
+                        nums[i] = Integer.MIN_VALUE;
+                        nums[j] = Integer.MIN_VALUE;
+                        count++;
+                    }
+                }
 
-	
+            }
+        }
+        return count;
+    }
 }
-
-/*
-2,5,5,5,6,6,8,9,9,9
-
-Target : 6
-
-Output :2
- */
 
   
 
