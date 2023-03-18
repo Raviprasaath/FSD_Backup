@@ -1,13 +1,13 @@
-package Array;
+package Leetcode;
 
-public class PivotPtOfSortedRotatedArray {
+public class SearchinRotatedSortedArray_33 {
     public static void main(String[] args) {
-        int [] array={7,8,9,1,2,3,4,5};
+        int [] nums= {7,8,9,1,2,3,4,5,6};
         int target = 8;
-        int ans = searchinrotatesortedarr(array, target);
-        System.out.println(ans);
+        System.out.println(search(nums, target));
     }
-    public static int searchinrotatesortedarr(int[] nums, int target) {
+
+    public static int search(int[] nums, int target) {
         int n = nums.length;
         int low = 0;
         int high = n - 1;
@@ -32,15 +32,6 @@ public class PivotPtOfSortedRotatedArray {
                 }
             }
         }
-
         return -1;
     }
 }
-
-/*
- * https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/pivot_of_sorted_and_rotated_array/topic
- */
-
-
-//  int ans = binarySearch(array, low, array.length-1, 4);
-//  System.out.println(ans);
