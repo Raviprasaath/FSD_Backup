@@ -1,20 +1,34 @@
 package Testing;
 
-import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.Stack;
 
 public class roughwork2 {
     public static void main(String[] args) {
-        System.out.println(reverse(456));
+        String str = "azzxzy";
+        System.out.println(ShortenString(str));        
     }
-    public static int reverse (int nums) {
-        int digit = 0;
-        int remain = 0;
-        while (nums != 0) {
-            digit = nums%10;
-            remain = (remain*10)+digit;
-            nums = nums/10;
+    public static String ShortenString(String str1) {
+        Stack<Character> st = new Stack<Character>();
+        int i = 0; 
+        while (i < str1.length()) {
+            if (st.isEmpty() || str1.charAt(i) != st.peek()) {
+                st.add(str1.charAt(i));
+                i++;
+            } else {
+                st.pop();
+                i++;
+            }
         }
-        return remain;
+        if (st.isEmpty()) {
+            return ("Empty String");
+        } else {
+            String short_String = "";
+        while (!st.isEmpty()) {
+            short_String = st.peek() +
+            short_String;
+            st.pop();
+        }
+        return (short_String);
+        }
     }
 }
