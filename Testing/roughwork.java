@@ -4,25 +4,34 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
 
 public class roughwork {
   	public static void main(String[] args) {
-		int [] array = {3,1,4,1,5};
-        System.out.println(findPairs(array, 2));
+		System.out.println(pivotInteger(8));
+        
 	}
-    public static int findPairs(int[] nums, int k) {
-        HashMap <Integer, Integer> hmap = new HashMap<>();
-        for (int num : nums) {
-            hmap.put(num, hmap.getOrDefault(num, 0)+1);
-        }
-        int result = 0;
-        for (int x : hmap.keySet()) {
-            if (k > 0 && hmap.containsKey(x + k) || k == 0 && hmap.get(x) > 1) {
-                result ++;
+    public static int pivotInteger(int n) {
+        int left = 0;
+        int right = n;
+        int lsum = 0;
+        int rsum = n;
+        int ans = 0;
+        while (lsum <= rsum) {
+            if (lsum == rsum) {
+                return lsum;
+            } else if (lsum < rsum) {
+                lsum += left;
+                left++;
+            } else {
+                right--;
+                rsum += right;
             }
         }
-        return result;
+        return -1;
     }
+    
 }
 
 
