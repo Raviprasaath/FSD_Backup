@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
+import java.util.PriorityQueue;
 import java.util.Comparator;
 
 public class TopKFrequentElements_347 {
@@ -14,7 +15,30 @@ public class TopKFrequentElements_347 {
             System.out.print(ans[i]+" ");
         }
     }
-    public static int[] topKFrequent(int[] nums, int k) {
+//-------------better beats---------------------------
+public static int[] topKFrequent(int[] nums, int k) {
+    HashMap <Integer, Integer> hmap = new HashMap<>();
+
+    for (int i : nums) {
+        hmap.put (i, hmap.getOrDefault(i,0)+1);
+    }
+
+    PriorityQueue <HashMap.Entry <Integer, Integer>> pq = 
+        new PriorityQueue<>((a,b)-> b.getValue() - a.getValue());
+
+    for (HashMap.Entry<Integer, Integer> entry : hmap.entrySet()) {
+        pq.add(entry);
+    }
+
+    int [] ans = new int[k];
+    for (int i=0; i<k; i++) {
+        ans[i] = pq.poll().getKey();
+    }
+    return ans;
+}
+
+//----------------very low beats------------------------
+    public static int[] topKFrequent1(int[] nums, int k) {
         HashMap <Integer, Integer> hmap = new HashMap<>();
         for (int i=0; i<nums.length; i++) {
             hmap.put (nums[i], hmap.getOrDefault(nums[i], 0)+1);
