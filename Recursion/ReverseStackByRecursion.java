@@ -1,10 +1,9 @@
-package Testing;
+package Recursion;
 
 import java.util.Stack;
 
-
-public class roughwork {
-  	public static void main(String[] args) {
+public class ReverseStackByRecursion {
+    public static void main(String[] args) {
 		St.push(1);
         St.push(2);
         St.push(3);
@@ -35,9 +34,3 @@ public class roughwork {
         }
     }
 }
-
-
-    
-  
-
-
