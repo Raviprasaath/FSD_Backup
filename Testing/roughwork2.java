@@ -6,36 +6,46 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.List;
 
 public class roughwork2 {
     public static void main(String[] args) {
-        int [] array = {2,4,3,3,5,4,9,6};
+        String [] arr = {"the","day","is","sunny","the","the","the","sunny","is","is"};
         int k = 4;
-        int [] arr = mostCompetitive(array, k);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");
-        }
+        System.out.println(topKFrequent(arr, k));
     }
-    public static int[] mostCompetitive(int[] nums, int k) {
-        int min = Integer.MAX_VALUE;
-        int digit = 0;
-        int remain = 0;
-        int m = 1;
-        for (int i=0; i<nums.length-k; i++) {
-            for (int j=i; j<k; j++) {
-                digit = nums[j] * m;
-                m = m*10;
-                remain = remain+digit;
+    public static List<String> topKFrequent(String[] words, int k) {
+        HashMap <String, Integer> hmap =  new HashMap<>();
+        for (int i=0; i<words.length; i++) {
+            hmap.put (words[i], hmap.getOrDefault(words[i], 0)+1);
+        }
+        System.out.println(hmap);
+        ArrayList <HashMap.Entry <String, Integer>> list = new ArrayList<>();
+        for (HashMap.Entry <String, Integer> entry: hmap.entrySet()) {
+            list.add(entry);
+        }
+        
+        Comparator <HashMap.Entry <String, Integer>> comp = new Comparator <HashMap.Entry <String, Integer>>() {
+            public int compare(HashMap.Entry <String, Integer> o1, HashMap.Entry <String, Integer> o2) {
+                return o1.getValue().compareTo(o2.getValue());
             }
-            min = Math.min(remain, min);
+        };
+        
+        Collections.sort(list, comp);
+        HashMap <String, Integer> sortMap = new LinkedHashMap<>();
+        
+        for (HashMap.Entry <String, Integer> entry : list) {
+            sortMap.put(entry.getKey(), entry.getValue());
+        }
+        
+        System.out.println("sorted ans");
+        for (HashMap.Entry <String, Integer> entry : sortMap.entrySet()) {
+            System.out.println(entry.getKey()+" "+entry.getValue());
         }
 
-        int [] ans = new int[k];
-        String arr = ""+min;
-        for (int i=0; i<k; i++) {
-            ans[i] = arr.charAt(i);
-        }
-        return ans;
+        ArrayList <String> list2 = new ArrayList<>();
+`
+        return list2;
     }
+    
 }
