@@ -20,6 +20,7 @@
     font-size: 80px;
     font-weight: 400;
     color: white;
+    text-align: center;
 }
 
 .work .blackBox {
@@ -60,6 +61,16 @@
     border-radius: 10px;
 }
 
+.cards:hover {
+    box-shadow: 10px 10px 10px rgb(236, 27, 201); 
+}
+.contact:hover {
+    box-shadow: 10px 10px 10px rgb(29, 134, 233);
+}
+.about:hover {
+    box-shadow: 10px 10px 10px rgb(225, 85, 85);
+}
+
 img {
     width: 100%;
     border-top-right-radius: 10px;
@@ -95,26 +106,41 @@ img {
 
 .contactme {
     background-color:darkgrey;
-    max-width: 340px;
-    margin: 30px;
+    max-width: 300px;
+    margin: 20px;
     padding: 15px;
+}
+.contactme:hover {
+    background-color: #b7c33599;
+    box-shadow:10px 10px 10px #6ee130;
 }
 
 .aboutme {
     background-color: cadetblue;
-    max-width: 340px;
-    margin: 30px;
+    max-width: 300px;
+    margin: 20px;
     padding: 15px;
+}
+.aboutme:hover {
+    background-color:aquamarine;
+    box-shadow:10px 10px 10px #6f0fe4c7;
 }
 
 @media only screen and (max-width: 786px) {
     .hero {
         min-height: 50vh;
         font-size: 24px;
-        
     }
     .bottom {
-        flex-direction: column;
-        
+        flex-direction: column;   
+    }
+    .aboutme {
+        max-width: max-content;
+        margin: 0px;
+    }
+    .contactme {
+        max-width: max-content;
+        margin: 0px;
+        margin-top: 30px;
     }
   }
