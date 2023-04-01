@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 320px 100px;
+    grid-gap: 10px;
+}
+
+.firstsection {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+.secondsection {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-gap: 10px;
+}
+
+.equal {
+    height: 450px;
+}
