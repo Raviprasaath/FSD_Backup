@@ -1,0 +1,37 @@
+.main-container {
+    width: 225px;
+    background-color: rgba(206, 245, 238, 0.838);
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.ans button {
+    width: 225px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mainarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-top: 5px;
+}
+
+.side {
+    display: grid;
+    grid-column: span 2 / auto;
+    /* grid-gap: 5px;
+    margin-left: 5px;
+    margin-top: 5px; */
+}
+.main button  {
+    width: 60px;
+}
+.side button {
+    width: 30px;
+}
