@@ -15,15 +15,16 @@
     font-weight: 400;
 }
 
-.work {
+.workfont {
     background-color: #000;
-    font-size: 80px;
-    font-weight: 400;
     color: white;
     text-align: center;
+    margin: 0px 0px 15px 0px;
+    font-size: 80px;
+    font-weight: 400;
 }
 
-.work .blackBox {
+.blackBox {
     font-size: 96px;
 }
 
@@ -62,13 +63,19 @@
 }
 
 .cards:hover {
-    box-shadow: 10px 10px 10px rgb(236, 27, 201); 
+    box-shadow: 10px 10px 10px rgb(236, 27, 201);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
 }
 .contact:hover {
     box-shadow: 10px 10px 10px rgb(29, 134, 233);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
 }
 .about:hover {
     box-shadow: 10px 10px 10px rgb(225, 85, 85);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
 }
 
 img {
