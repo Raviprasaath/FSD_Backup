@@ -1,0 +1,98 @@
+.item {
+    border: 1px solid brown;
+    background-color: aquamarine;
+    width: 40px;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    width: 200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+
+/* absolute and relative */
+
+/*------------- type 1-------------- */
+/* .container {
+    position: relative;
+    left: 0px;
+}
+
+.item12 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+/* ---------------------------------- */
+
+
+
+/*------------- type 1 -> z index -------------- */
+/* .container {
+    position: relative;
+}
+
+.item12 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    z-index: -1;
+} */
+/* ---------------------------------- */
+
+
+
+
+
+/*------------- type 1-------------- */
+/* when items are absolute  */
+/* .item12 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}  */
+/* ---------------------------------- */
+
+
+
+/*------------- type 2-------------- */
+/* relative */
+/* .item3 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+} */
+/* ---------------------------------- */
+
+
+/*------------- type 3------------- */
+/* static  -> nothing will move in static position */
+/* .item2 {
+    position: static;
+    top: 10px;
+} */
+
+/*------------- type 4-------------- */
+/* fixed   -> while scorlling it was fixed in the same position like ad*/
+/* fixed for whole html */
+/* .item3 {
+    position: fixed;
+    z-index: -1;
+    left:10px;
+    top:10px
+} */
+
+/*------------- type 5-------------- */
+/* sticky  -> while scorling it remains same place under the parent control */
+/* .item4 {
+    position: sticky;
+    left: 10px;
+    top: 10px;
+} */

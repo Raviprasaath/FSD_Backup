@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+}
+
+body {
+    background: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main.container {
+    padding: 15px;
+}
+
+section.daniel-clifford {
+    background: var(--moderate-violet);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--white);
+}
+
+section.jonathan-walters {
+    background: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--white);
+}
+
+section.kira-whittle {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section.jeanette-harmon {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section.patrick-abrams {
+    background: var(--very-dark-blackish-blue);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--white);
+}
+
+.username-qualification {
+    padding-top: 7px;
+}
+
+.username {
+    color: var(--white);
+    font-size: larger;
+    font-weight: 600;
+}
+
+.qualifaction {
+    color: var(--white);
+    opacity: 50%;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.kira-whittle .username, .jeanette-harmon .username {
+    color: var(--very-dark-grayish-blue);
+    font-size: larger;
+    font-weight: 600;
+}
+
+.kira-whittle .qualifaction, .jeanette-harmon .qualifaction{
+    color: var(--very-dark-grayish-blue);
+    opacity: 50%;
+}
+
+.testimonial-bold {
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.testimonial-light {
+    color: var(--white);
+    opacity: 70%;
+}
+
+.kira-whittle .testimonial-light, .jeanette-harmon .testimonial-light {
+    color: var(--very-dark-grayish-blue);
+    opacity: 70%;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.daniel-clifford {
+    grid-column: span 2 / auto;    
+}
+.patrick-abrams {
+    grid-column: span 2 / auto;
+}
+
+.kira-whittle {
+    grid-row: span 2 / auto;
+}

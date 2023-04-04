@@ -1,11 +1,153 @@
 
 .hero {
     background-image: url("https://i.pinimg.com/originals/82/4b/87/824b877bf4c731e3fcc13a8881c3e982.jpg");
-    height: 300px;
-    position: relative;
+    height: 700px;
+    /* position: relative; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.main-container {
+    padding-top: 5%;
+    color: white;
+    padding-left: 20%;
+    font-weight: 400;
+}
 
+.workfont {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.blackBox {
+    font-size: 96px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.cards {
+    height:400px;
+    max-width:340px;
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(340px, 1fr));
+    box-shadow: 10px 10px 10px #888888;
+    border-radius: 10px;
+    align-items: center;
+}
+.contact {
+    height:400px;
+    max-width:340px;
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(340px, 1fr));
+    box-shadow: 10px 10px 10px #888888;
+    border-radius: 10px;
+}
+.about {
+    height:400px;
+    max-width:340px;
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(340px, 1fr));
+    box-shadow: 10px 10px 10px #888888;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    box-shadow: 10px 10px 10px rgb(236, 27, 201);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
+}
+.contact:hover {
+    box-shadow: 10px 10px 10px rgb(29, 134, 233);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
+}
+.about:hover {
+    box-shadow: 10px 10px 10px rgb(225, 85, 85);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.04);
+}
+
+img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cards h3 {
+    margin: 15px;
+}
+.cards p {
+    margin: 15px;
+}
+.contact h3 {
+    margin: 15px;
+}
+.contact p {
+    margin: 15px;
+}
+.about h3 {
+    margin: 15px;
+}
+.about p {
+    margin: 15px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contactme {
+    background-color:darkgrey;
+    max-width: 300px;
+    margin: 20px;
+    padding: 15px;
+}
+.contactme:hover {
+    background-color: #b7c33599;
+    box-shadow:10px 10px 10px #6ee130;
+}
+
+.aboutme {
+    background-color: cadetblue;
+    max-width: 300px;
+    margin: 20px;
+    padding: 15px;
+}
+.aboutme:hover {
+    background-color:aquamarine;
+    box-shadow:10px 10px 10px #6f0fe4c7;
+}
+
+@media only screen and (max-width: 786px) {
+    .hero {
+        min-height: 50vh;
+        font-size: 24px;
+    }
+    .bottom {
+        flex-direction: column;   
+    }
+    .aboutme {
+        max-width: max-content;
+        margin: 0px;
+    }
+    .contactme {
+        max-width: max-content;
+        margin: 0px;
+        margin-top: 30px;
+    }
+  }
