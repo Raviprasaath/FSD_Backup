@@ -1,0 +1,102 @@
+
+.top-portion {
+    background-image: url(https://wallpaperaccess.com/full/314182.jpg);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    width: 100px;
+    padding: 10px;
+}
+
+.logo-home {
+    background-color: rgba(128, 128, 128, 0.422);
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+}
+
+.headings-inside {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hover-name {
+    padding: 10px;
+    list-style: none;
+}
+.hover-name:hover {
+    background-color: rgba(106, 227, 187, 0.559);
+    
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border: solid red 5px;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: fit-content;
+    margin: auto;
+    margin-top: 220px;
+}
+
+
+
+.logo-home {
+    position: relative;
+    top: 15px;
+}
+
+
+.search-name {
+    background-color: rgb(237, 42, 42);
+    width: 350px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.search-bar {
+    width: 360px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.middle-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.container {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 130px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.container1 {
+    background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/114FjVtNCQrW19OOaV8NZJ/615ffc9ca608f430f5fdeb5346e82a54/acm_character-block-Roshan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

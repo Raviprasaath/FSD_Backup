@@ -73,7 +73,7 @@
     transform: scale(1.04);
 }
 .about:hover {
-    box-shadow: 10px 10px 10px rgb(225, 85, 85);
+    box-shadow: 10px 10px 10px rgba(225, 85, 85, 0.804);
     transition: 0.2s ease-in-out;
     transform: scale(1.04);
 }
