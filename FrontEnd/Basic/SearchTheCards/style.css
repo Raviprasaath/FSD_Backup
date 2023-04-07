@@ -26,11 +26,11 @@
     flex-direction: row;
 }
 
-
 .hover-name {
     padding: 10px;
     list-style: none;
 }
+
 .hover-name:hover {
     background-color: rgba(106, 227, 187, 0.559);
     
@@ -65,7 +65,6 @@
     text-align: center;
 }
 .search-bar {
-    width: 360px;
     margin: 5px;
     font-size: 25px;
 }
@@ -75,28 +74,118 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    
+    background-color: black;
 }
 
 .container {
     padding: 10px;
     margin: 10px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
     border: 1px solid black;
-    width: 130px;
-    height: 200px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.container .container-price, .container .container-name {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.con-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.container:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 1px 10px 1px skyblue;
+}
+.container-price .percent {
+    background-color: rgb(23, 177, 238);
+    border-radius: 5px;
+
+    padding: 5px;
+    margin: 5px;
+}
+.container-name {
+    padding: 5px;
+    margin: 5px;
+}
+
+.strike {
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+.signup {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+    color: white;
+}
+
+
+.signup-detail {
+    position: relative;
+    width: 100%;
+    background-color: rgba(128, 54, 185, 1);
+}
+
+.gif-bg {
+    display: flex;
+    justify-content: center;
+       
+}
+
+.gif-bg img {
+    width: 30%;
+    margin: 5%; 
+}
+
+.gif-container {
+    background-color: rgba(0,0,0,0.6);
+    width: 80%;
+}
+
+
+.signin-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-portion {
     background-color: black;
     color: white;
     display: flex;
-    align-items: end;
-    text-align: center;
-    border-radius: 10px;
-    
+    justify-content: end;
 }
 
-.container1 {
-    background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/114FjVtNCQrW19OOaV8NZJ/615ffc9ca608f430f5fdeb5346e82a54/acm_character-block-Roshan.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.foot {
+    list-style: none;
+}
+.foot-base {
+    display: flex;
+    flex-direction: row;
 }
