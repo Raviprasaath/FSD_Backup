@@ -72,7 +72,7 @@
 /* grid-gap -> row col */
 /* .container {
     display: grid;
-    grid-template-columns: 100px minmax(50px, 2fr) 1fr;
+    grid-template-columns: 100px minmax(10px, 2fr) 1fr;
     grid-template-rows: repeat(3, 150px);
     grid-gap: 30px 40px;   
 } */
@@ -95,11 +95,11 @@
 
 
 /* autofit not working*/
-.container {
+/* .container {
     display: grid;
     grid-template-rows: repeat(4, 100px);
     grid-template-columns: repeat(autofit, minmax(100px, 1fr));
-}
+} */
 
 
 
