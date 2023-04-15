@@ -1,0 +1,26 @@
+* {
+    font-size: 20px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.logo img{
+    width: 120px;
+    padding: 5px;
+}
+
+.nav-bar2 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav-bar2 > li {
+    padding: 10px;
+}

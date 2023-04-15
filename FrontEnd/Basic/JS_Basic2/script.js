@@ -1,6 +1,6 @@
 // ------------------------------12/04/2023-------------------------
 
-// console.log(a +"hello1")
+// console.log(a +"  hello1")
 // var a = 12;
 
 // abc()
@@ -12,9 +12,7 @@
 //     console.log(a +"  inside function")
 // }
 
-// console.log(a)
-
-
+// console.log(a +"  outside function")
 
 //--------------------------- 13/04/2023---------------------------
 
@@ -43,18 +41,19 @@
 //         return c
 //     } catch (error) {
 //         console.log("Hey user doing correct?")
+//         console.log(error)
+//         alert('something went wrong')
         
 
-//         if (error.message == "alignment") {
+//         if (error.message === "alignment") {
 //             alert('something went wrong')
-//         } else if (error.message == "non alignment") {
+//         } else if (error.message === "non alignment") {
 //             alert("database is down")
 //         }
-//         console.log(error)
 //     }
 // }
-// let result = sum(1,2)
-// console.log(result)
+let result = sum(1,2)
+console.log(result)
 
 
 // example 2
@@ -96,4 +95,3 @@ console.log(result2, "sub")
 let result3 = calculator(1,2, 'multi')
 console.log(result3, "multi")
 
-// console.log(result1, result2, result3)
