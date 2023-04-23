@@ -68,7 +68,7 @@ let arr2 = [1,2,3,4,7]
 // }
 
 
-// let arr4 = [10, 2, 31, 42, 5, 65, 7, 8]
+let arr4 = [10, 2, 31, 42, 5, 65, 7, 8]
 
 // // 2. for of loop -> printing the value
 // for (let item of arr4) {
@@ -83,13 +83,13 @@ let arr2 = [1,2,3,4,7]
 //------------Extra fun Array call backs----------
 //  1. Filter
 
-let arr = [5,8,900,3,1,2,18,19,20,25,100,189]
-function filterRavi() {
+// let arr = [5,8,900,3,1,2,18,19,20,25,100,189]
+// function filterRavi() {
 
-}
+// }
 
-(item) => {
-    return item > 19
-}
-arr.filter()
-//  not completed this 
+// (item) => {
+//     return item > 19
+// }
+// arr.filter()
+// //  not completed this 
