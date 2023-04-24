@@ -102,7 +102,7 @@
 .intro-bio {
     margin-top: 10%;
     font-size: 17px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
 .button-more {
@@ -112,7 +112,7 @@
     border-radius: 30px;
     padding: 20px;
     border: 1px gray;
-    background-color: rgb(12, 211, 111);
+    background-color: rgba(241, 58, 38, 0.9);
     color: aliceblue;
 }
 
@@ -123,8 +123,7 @@
     .nav-left-side{
         width: 30%;
     }
-    .nav-left-side {
-        
+    .nav-left-side {        
         display: flex;
         flex-direction: column;
         background-color: rgba(211, 209, 213, 0.483); 
