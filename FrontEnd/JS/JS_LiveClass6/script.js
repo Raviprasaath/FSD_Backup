@@ -145,26 +145,26 @@ return value can be any thing boolean, int, number , object,
 
 //-----------
 
-// let arr = [19,21,37,44,51,69,77,88]
+let arr = [19,21,37,44,51,69,77,88]
 
-// let beautifulArr = arr.map ((value, index, array) => {
-//     console.log(value+" map at the index: "+index)
+let beautifulArr = arr.map ((value, index, array) => {
+    console.log(value+" map at the index: "+index)
 
-//     let rank =''
-//     if (value < 22) {
-//         rank = 'undergrad'
-//     } else if (value >=22 && value < 30) {
-//         rank = 'passedout'
-//     } else if (value>= 30) {
-//         rank = 'exp'
-//     }
-//     let obj = {
-//         age : value,
-//         rank : rank, 
-//     }
-//     return obj;
+    let rank =''
+    if (value < 22) {
+        rank = 'undergrad'
+    } else if (value >=22 && value < 30) {
+        rank = 'passedout'
+    } else if (value>= 30) {
+        rank = 'exp'
+    }
+    let obj = {
+        age : value,
+        rank : rank, 
+    }
+    return obj;
 
-// })
+})
 
 // console.log(arr)
 // console.log(beautifulArr)

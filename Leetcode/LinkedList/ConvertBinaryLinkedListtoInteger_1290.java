@@ -47,7 +47,8 @@ class LinkkList {
       }
       return sum; 
     }
-  }
+}
+
 public class ConvertBinaryLinkedListtoInteger_1290 {
     public static void main(String[] args) {
         LinkkList list = new LinkkList();
