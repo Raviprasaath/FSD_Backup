@@ -21,8 +21,6 @@
 // console.log(result)
 
 
-
-
 //--------Named Function-----
 // function abc() {
 
@@ -41,11 +39,9 @@
 // console.log(re)
 
 
-
-
 //------------------Call Back------------
 
-// add vs add()
+// // add vs add()
 
 // function loggin(callBack) {
 //     console.log('loggin')
@@ -56,24 +52,26 @@
 // }
 // loggin(add)
 
+
 //----------------Higher order function----------
 // --------------------Example 1----------------
-// function calc (condition) {
-//     if (condition === "add") {
-//         return function(a,b) {
-//             return a + b
-//         }
-//     } else if (condition === "sub") {
-//         return function(a,b) {
-//             return a-b
-//         }
-//     }
-// }
+function calc (condition) {
+    if (condition === 'add') {
+        return function(a,b) {
+            return a + b
+            
+        }
+    } else if (condition === "sub") {
+        return function(a,b) {
+            return a-b
+        }
+    }
+}
 
-// let functionadd = calc("add")
-// console.log(functionadd)
+let functionadd = calc('add')
+console.log(functionadd)
+functionadd(12,13)
 
-// functionadd(12,13)
 
 
 
@@ -83,11 +81,11 @@
 
 //----Array is always a object and it will always created in HEAP only
 
-let arr = [1,2,3,4]
-console.log(arr.length)
-arr.push(5) // add element in back
+// let arr = [1,2,3,4]
+// console.log(arr.length)
+// arr.push(5) // add element in back
 
 
-const arr1 = [1,2,3,4,5,6]
-arr1.push(7)
-console.log(arr1.length)
+// const arr1 = [1,2,3,4,5,6]
+// arr1.push(7)
+// console.log(arr1.length)
