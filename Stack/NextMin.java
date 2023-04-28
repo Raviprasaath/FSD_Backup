@@ -8,7 +8,7 @@ public class NextMin {
       int array[] = {8, 5, 3, 1, 2, 3};
       int n = array.length;
   
-      Stack <Integer> st = new <Integer> Stack();
+      Stack <Integer> st = new Stack<>();
       Stack <Integer> st2 = new Stack<>();
       st.push(array[0]);
       st2.push(array[0]);
