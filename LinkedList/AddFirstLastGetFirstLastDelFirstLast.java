@@ -124,7 +124,5 @@ public class AddFirstLastGetFirstLastDelFirstLast {
         System.out.println();
         list.addFromLast(4,5);
         list.display();
-
-    }
-   
+    }   
 }
