@@ -1,18 +1,28 @@
 package Testing;
-
-import java.util.Arrays;
+import java.util.HashMap;
 
 public class roughwork {
   public static void main(String[] args) {
-    int [][] array = {{6,34,9},{12,55,4},{7,182,16}};
-    int ans = kthSmallest(array, 1);
-
-    System.out.println(ans);
+    String str = "1210";
+    System.out.println(digitCount(str));
   }
-  public static int kthSmallest(int[][] matrix, int k) {
-    int[] flattened = Arrays.stream(matrix).flatMapToInt(Arrays::stream).sorted().toArray();
-    return flattened[k - 1];
-
-
+  public static boolean digitCount(String num) {
+    int n = num.length();
+    HashMap<Integer, Integer> hmap = new HashMap<>();
+    for (int i=0; i<n; i++) {
+        int ch = num.charAt(i)-'0';
+        hmap.put(ch, hmap.getOrDefault(ch, 0) +1);
     }
+    
+    int count = 0;
+    for (int i=0; i<n; i++) {
+        if (hmap.containsKey(i)) {
+          count = hmap.get(i);
+        } else {
+          count = 0;
+        }
+    }
+
+    return (count == 0?true:false);           
+}
 }
