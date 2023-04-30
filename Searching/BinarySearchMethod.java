@@ -15,7 +15,7 @@ public class BinarySearchMethod {
         Arrays.sort(array);
         System.out.println(binary(array, target));
     }    
-    public static int binary(int array[], int target){
+    public static int binary(int array[], int target) {
         int left=0;
         int right=array.length-1;
         while(left<=right){

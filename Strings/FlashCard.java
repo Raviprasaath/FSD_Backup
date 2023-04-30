@@ -22,6 +22,6 @@ public class FlashCard {
         String word = sc.nextLine(); //hi
         String meaning = sc.nextLine(); // hello
  
-         System.out.println(new Flashcarddd(word, meaning));
-     }
+        System.out.println(new Flashcarddd(word, meaning));
+    }
 }
