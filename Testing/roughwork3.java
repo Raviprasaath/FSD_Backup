@@ -4,42 +4,39 @@ import java.util.Stack;
 
 public class roughwork3 {
     public static void main(String[] args) {
-        int [] arr = {3,5,3,4};
-        System.out.println(numRescueBoats(arr, 5));
+        String str = "10001";
+
+        System.out.println(removeKdigits1(str, 4));
     }
-    public static int numRescueBoats(int[] people, int limit) {
-        int ans = 0;
-        boolean flag = true;
-        Arrays.sort(people);
-        Stack <Integer> st = new Stack<>();
-        for (int i=0; i<people.length; i++) {
-            st.push(people[i]);
+    public static String removeKdigits1(String num, int k) {
+        int kbackup = k;
+        StringBuilder sb = new StringBuilder();
+        String backup = ""+num;
+        int min = Integer.MAX_VALUE;
+
+        for (int i=backup.length(); i>=0+k; i--) {
+            sb.delete(0, num.length());
+            sb.append(num);
+            sb.delete(i, i+k);
+            String str = sb.toString();
+            int nums = Integer.parseInt(str);
+            min = Math.min(min, nums);
+        }
+        for (int i=0; i<backup.length()-kbackup; i++) {
+            sb.delete(0, num.length());
+            sb.append(num);
+            sb.delete(i, i+k);
+            String str = sb.toString();
+            int nums = Integer.parseInt(str);
+            min = Math.min(min, nums);
+        }
+        int ans = min;
+        if (ans==Integer.MAX_VALUE) {
+            return "0";
+        } else {
+            return min+"";
         }
 
-        while (!st.isEmpty()) {
-            int temp;
-            int sum = 0;
-            if (st.peek() == limit) {
-                st.pop();
-                ans++;
-            }
-            if (!st.isEmpty() && st.peek() < limit ) {
-                temp =st.pop();
-                if ((st.size()>=2 && (sum += temp) <= limit && (sum += st.peek()) <= limit)) {
-                    flag = true;
-                } else {
-                    st.push(temp);
-                    flag = false;
-                }
-                if (flag) {
-                    sum += st.pop();
-                    ans++;
-                } else {
-                    sum += st.pop();
-                    ans++;
-                }
-            }
-        }
-        return ans;
     }
+
 }
