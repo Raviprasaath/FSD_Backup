@@ -17,3 +17,4 @@ public class NumberofGoodPairs_1512 {
         return count;
     }
 }
+

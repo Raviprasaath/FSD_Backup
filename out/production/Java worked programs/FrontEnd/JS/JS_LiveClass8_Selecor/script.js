@@ -28,3 +28,4 @@ console.log(cont)
 // 4.querySelector - CSS selector
 const paraquery = document.querySelector("#cssq")
 console.log(paraquery) 
+
