@@ -134,7 +134,7 @@ childArray[childArray.length-1].textContent = 'prasaath'
 // ----------3. Additon in the DOM
 // in list add one more 
 
-// 1.create
+// 1.create  -- creating in heap
 const liElement = document.createElement("li")
 console.log("liElement new ", liElement)
 
@@ -154,3 +154,21 @@ unorderedlist.append(liElement)
 
 // unorderedlist.innerHTML = unorderedlist.innerHTML + "<li>hgafsa</li>\n"
 // // don't use this
+
+
+
+// ----------------- 02-05-2023 -----------------------
+//  delete or remove from list
+
+//  1.select the element
+//  2. .remove() -> whole list
+// const removeList = document.getElementById("names")
+// removeList.remove()  // it remove all elements
+
+const removeLast = document.querySelector("#names > li:nth-child(6)");
+removeLast.remove();
+console.log(removeLast)
+
+// go to inspect page right click the element and do copy -> copy selector
+// now paste inside query selector
+
