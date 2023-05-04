@@ -93,82 +93,82 @@ console.dir(caaard)
 
 
 // ---------search--------
-// 1. select the element
-const element = document.getElementById("names")
-console.log("---------element------")
-console.dir(element)
+// // 1. select the element
+// const element = document.getElementById("names")
+// console.log("---------element------")
+// console.dir(element)
 
-// html collection
-const child = element.children;
-console.log(child, "html collections")  //HTMLCollection(5) [li, li, li, li, li]
-
-
-const childArray = Array.from(child);
-console.log(childArray , "Array")  //script.js:106 (5) [li, li, li, li, li]
+// // html collection
+// const child = element.children;
+// console.log(child, "html collections")  //HTMLCollection(5) [li, li, li, li, li]
 
 
-
-// method 1
-// childArray.forEach(liElement => {
-//     if (liElement.textContent === 'ravi') {
-//         console.log('result is true')
-//     }
-// })
+// const childArray = Array.from(child);
+// console.log(childArray , "Array")  //script.js:106 (5) [li, li, li, li, li]
 
 
 
-// method 2
-function SearchName(name) {
-    return childArray.find(liElement => {
-        return liElement.textContent === name
-    })
-}
+// // method 1
+// // childArray.forEach(liElement => {
+// //     if (liElement.textContent === 'ravi') {
+// //         console.log('result is true')
+// //     }
+// // })
 
 
 
-// --------2. change the last name 
-// in the list last name was updated
-childArray[childArray.length-1].textContent = 'prasaath'
-
-
-// ----------3. Additon in the DOM
-// in list add one more 
-
-// 1.create  -- creating in heap
-const liElement = document.createElement("li")
-console.log("liElement new ", liElement)
-
-// 2.Edit the element
-liElement.innerText = 'raviprasaath'
-
-// 3.Attach the new Element to the ul list
-// way 1
-const unorderedlist = document.getElementById("names")
-// way 2 of adding
- 
-
-// 4. Adding things in the last 
-unorderedlist.append(liElement)
+// // method 2
+// function SearchName(name) {
+//     return childArray.find(liElement => {
+//         return liElement.textContent === name
+//     })
+// }
 
 
 
-// unorderedlist.innerHTML = unorderedlist.innerHTML + "<li>hgafsa</li>\n"
-// // don't use this
+// // --------2. change the last name 
+// // in the list last name was updated
+// childArray[childArray.length-1].textContent = 'prasaath'
+
+
+// // ----------3. Additon in the DOM
+// // in list add one more 
+
+// // 1.create  -- creating in heap
+// const liElement = document.createElement("li")
+// console.log("liElement new ", liElement)
+
+// // 2.Edit the element
+// liElement.innerText = 'raviprasaath'
+
+// // 3.Attach the new Element to the ul list
+// // way 1
+// const unorderedlist = document.getElementById("names")
+
+
+// // 4. Adding things in the last 
+// unorderedlist.append(liElement)
+
+// // way 2 of adding
+// // unorderedlist.innerHTML = unorderedlist.innerHTML + "<li>hgafsa</li>\n"
+// // // don't use this
 
 
 
-// ----------------- 02-05-2023 -----------------------
-//  delete or remove from list
 
-//  1.select the element
-//  2. .remove() -> whole list
-// const removeList = document.getElementById("names")
-// removeList.remove()  // it remove all elements
 
-const removeLast = document.querySelector("#names > li:nth-child(6)");
-removeLast.remove();
-console.log(removeLast)
+// // ----------------- 02-05-2023 -----------------------
+// //  delete or remove from list
 
-// go to inspect page right click the element and do copy -> copy selector
-// now paste inside query selector
+// //  1.select the element
+// //  2. .remove() -> whole list
+// // const removeList = document.getElementById("names")
+// // removeList.remove()  // it remove all elements
+
+// const removeLast = document.querySelector("#names > li:nth-child(6)");
+// removeLast.remove();
+// console.log(removeLast)
+
+// // go to inspect page right click the element and do copy -> copy selector
+// // now paste inside query selector
 
