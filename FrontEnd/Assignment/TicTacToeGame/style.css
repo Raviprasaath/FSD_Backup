@@ -1,0 +1,17 @@
+/* css code goes here */
+.tic-tac {
+    display: grid;
+    grid-template-columns: repeat(3, 115px);
+    background-color: rgb(0,0,0,0.4);
+    width: fit-content;
+    padding: 5px;
+}
+.hit {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.hit {
+    font-size: 10px;
+}

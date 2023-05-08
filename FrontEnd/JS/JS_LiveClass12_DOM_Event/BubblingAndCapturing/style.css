@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid black;
+    
+}
+
+#grandFather {
+    width: 500px;
+    height: 500px;
+    background-color:aquamarine;
+}
+#parent {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: cadetblue;
+}
+
+#child {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: cornflowerblue;
+}

@@ -1,8 +1,6 @@
-package Testing;
-import java.util.Arrays;
-import java.util.Stack;
+package Leetcode.Array2d;
 
-public class roughwork3 {
+public class MatrixDiaginalSum_1572 {
     public static void main(String[] args) {
         int [][] array = {{1,2,3},{4,5,6},{7,8,9}};
         System.out.println(diagonalSum(array));
@@ -15,9 +13,8 @@ public class roughwork3 {
             j++;
             i++;
         }
-        int k = mat.length-1;
+        int k = mat.length-1, m=0;
         while (k != -1) {
-            int m=0;
             sum += mat[m][k];
             m++;
             k--;
@@ -28,5 +25,4 @@ public class roughwork3 {
         }
         return sum;
     }
-    
 }

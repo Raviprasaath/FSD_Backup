@@ -1,13 +1,3 @@
-
-
-function clickHere(e) {
-    e.preventDefault();
-    // let inputTaking = document.querySelector(".todo-input");
-    
-    console.log("dsc");
-    // let callingTodoList = document.getElementsByClassName("todo-list");
-    // callingTodoList.innerText = inputTaking.value;
-    
-}
-
-console.log("dbgg")
+var name = prompt("hello")
+var age = prompt("tell yours")
+alert("success")
