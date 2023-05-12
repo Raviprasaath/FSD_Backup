@@ -21,4 +21,7 @@ parent.addEventListener("click", () => {
 
 
 
+child.addEventListener("click", () => {
+    console.log("child clicked")
+}, false );
 

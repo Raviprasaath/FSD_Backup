@@ -21,3 +21,12 @@
     margin: 20px;
     background-color: cornflowerblue;
 }
+
+#button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    background-color:rgb(185, 127, 255);
+    border-radius: 8px;
+    cursor:default;
+}

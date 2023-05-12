@@ -3,7 +3,7 @@ package Testing;
 
 public class roughwork2 {
     public static void main(String[] args) {
-        String [] strs = {"flo","flow","flight"};
+        String [] strs = {"flow","flow","flight"};
         System.out.println(longestCommonPrefix(strs));
     }
     public static String longestCommonPrefix(String[] strs) {
