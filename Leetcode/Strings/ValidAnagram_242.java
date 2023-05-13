@@ -2,8 +2,8 @@ package Leetcode.Strings;
 
 public class ValidAnagram_242 {
     public static void main (String[] args) {
-        String str1 = "abanca";
-        String str2 = "abanac";
+        String str1 = "abancad";
+        String str2 = "abanace";
         
         boolean ans = anagram(str1, str2);
         System.out.print((ans)?"YES":"NO");
