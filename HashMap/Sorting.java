@@ -16,6 +16,7 @@ public class Sorting {
         hmap.put ('C', 3);
 
 // ------------Sort by Value---------------
+        
         for (HashMap.Entry <Character, Integer> entry : hmap.entrySet()) {
             System.out.println(entry.getKey()+" "+entry.getValue());
         }
@@ -99,7 +100,7 @@ public class Sorting {
         //     System.out.println(entry.getKey()+" "+entry.getValue());
         // }
 
-//-----------reverse by eauation o1, o2 interchange----------
+//-----------reverse by equation o1, o2 interchange----------
         // for (HashMap.Entry <Character, Integer> entry : hmap.entrySet()) {
         //     System.out.println(entry.getKey()+" "+entry.getValue());
         // }
