@@ -1,0 +1,16 @@
+body {
+    background-color: palegoldenrod;
+}
+#container {
+    background-color:rgba(255, 0, 255, 0.682);
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+}
+

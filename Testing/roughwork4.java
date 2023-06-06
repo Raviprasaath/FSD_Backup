@@ -1,96 +1,24 @@
 package Testing;
 
-class LinkedLists {
-	Node head;
-	Node tail;
-	
-	public class Node{
-		int value;
-		Node next;
 
-		Node(){}
-		
-		Node(int val){
-			value=val;
-			next=null;
-		}	
-	}
-
-  public void display() {
-    Node temp = head;
-    while (temp != null) {
-      System.out.print(temp.value+" -> ");
-      temp = temp.next;
-    }
-    System.out.print("null");
-  }
-
-  public void add(int val){
-    Node newNode = new Node(val);
-    Node temp = this.head;
-
-    if (temp == null) {
-      newNode.next=null;
-      head = newNode;
-    } else {
-      newNode.next = head;
-      head = newNode;
-    }
-  }
-
-
-
-  public int pairSum(Node head) {
-    Node temp = head;
-    int count = 0;
-    while ( temp != null ) {
-        count++;
-        temp = temp.next;
-    }
-    
-    temp = head;
-
-    Node dummy = new Node(0);
-    Node dummyHead = dummy;
-    while (temp != null) {
-        dummy.next = new Node(temp.value);
-        dummy = dummy.next;
-        temp = temp.next;
-    }
-
-    Node current = dummyHead.next;
-    Node currStore = null;
-    Node prev = null;
-    while (current != null) {
-        currStore = current.next;
-        current.next = prev;
-        prev = current;
-        current = currStore;
-    }
-    dummy = prev;
-    temp = head;
-    int max = 0;
-    while (count / 2 != 0) {
-        max = Math.max(max, (temp.value + dummy.value) );
-        count--;
-        temp = temp.next;
-        dummy = dummy.next;
-    }
-    return max;
-}
-}
+import java.util.ArrayList;
 
 public class roughwork4 {
   public static void main (String[] args) {
-    LinkedLists list = new LinkedLists();
-    list.add(1);
-    list.add(2);
-    list.add(4);
-    list.add(5);
-    list.display(); 
-    System.out.println();
-    int sum = new LinkedLists().pairSum(list.head);
-    System.out.println(sum);
-  }   
+    String n = "00000010100101000001111010011100";
+    
+  }
+  public static int reverseBits(int n) {
+    String str = Integer.toBinaryString(n);
+    StringBuilder sb = new StringBuilder();
+    for (int i=str.length()-1; i>=0; i--) {
+        sb.append(str.charAt(i));
+    }
+    
+    // long ans = Long.parseLong(sb.toString());
+    // return (int)ans;
+    return 1;
+}
+  
 }
 

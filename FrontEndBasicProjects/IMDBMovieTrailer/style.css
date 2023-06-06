@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(0, 0, 0, 0.385);
+    width: 100%;
+    margin: 0;
+}
+
+#totalScreen {
+    width: 100%;
+    position: absolute;
+}
+
+#container {
+    width: 100%;
+}
+
+.MovieImg {
+    width: 100%;
+}
+
+#movieTitle {
+    padding: 20px;
+}
+
+#watch {
+    border: none;
+    padding: 10px;
+    background-color: turquoise;
+    border-radius: 5px;
+}
+
+.active {
+    visibility: hidden;
+}
+
+#videoClip video{
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+#xmark {
+    position: absolute;
+    top: 80px;
+    left: 80%;
+    font-size: xxx-large;
+    color: white;    
+}

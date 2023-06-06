@@ -1,0 +1,21 @@
+body {
+    background-color:rgba(255, 217, 0, 0.626);
+}
+
+#container {
+    margin: auto;
+    margin-top: 15vh;
+
+    padding: 20px;
+    text-align: center;
+    width: 50vh;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.663);
+    color: white;
+}
+
+#container form select {
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+

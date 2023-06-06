@@ -1,0 +1,26 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+.container {
+    padding: 20px;
+    margin: auto;
+    margin-top: 8vh;
+    width: 40vh;
+    background-color: lightslategray;
+    height: 60vh;
+    text-align: center;
+
+}
+.convert {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container > input {
+    margin: 10px;
+    padding: 10px;
+}
+.container > button {
+    margin: 10px;
+    background-color:blanchedalmond;
+}

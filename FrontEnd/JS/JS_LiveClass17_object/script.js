@@ -253,3 +253,74 @@ for (const [key, value] of entryPerson) {
 // output
 // name: ravi
 // 17 rollNumber: 1
+
+for (const arr of entryPerson) {
+    console.log(`${arr[0]}: ${arr[1]} raviravi`)
+}
+// output
+// name: ravi raviravi
+// rollNumber: 1 raviravi
+
+
+
+
+
+
+
+
+
+// ----Object Destructing -------
+
+const objDes = {
+    namename : "ravi",
+    classes : 10,
+    rollNumber : 90,
+    choiceOfAirways : "Go Airways" 
+}
+
+console.log(objDes.choiceOfAirways)
+
+const {classes, choiceOfAirways} = objDes
+
+// replacing the below 2 lines we use the above one
+// const rollnum = objDes.rollNumber;
+// const choiceOfAirways = objDes.choiceOfAirways;
+
+console.log(classes, choiceOfAirways)
+
+// output
+// Go Airways
+// 10 'Go Airways'
+
+
+// Destructuring ALIAS
+const {rollNumber: rollCall, choiceOfAirways} = objDes;
+console.log(rollCall, choiceOfAirways, "rollCall");
+// output
+// 10 'Go Airways' 'rollCall'
+
+
+// -----------------Array Destructuring------
+const arrDes = [100, 212, 3, 4]
+const [first, second] = arrDes;
+console.log("array destructuring", first, second) 
+
+// output 100 212 
+
+const arrDes = [100, 212, 3, 4]
+const [first, second, , fourth] = arrDes;
+console.log("array destructuring", first, second, fourth) 
+// 100 212 4
+// Array contains only value no key so here it storing how in array
+// if we want to print 4 th one without 3rd one means we can skip like this
+// const first = arrDes[0];
+// const second = arrDes[1];  // this is same as above 
+
+// ----String Literal--------
+const string1 = "asbasc";
+const string2 = "asbasc";
+// these strings are static we can't add anything in dynamically
+const variable = 1;
+
+const string3 = `Hey hi: ${variable}`
+// so in string 3 we added variable 1
