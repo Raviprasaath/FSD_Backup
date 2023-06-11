@@ -88,16 +88,16 @@ child.addEventListener("click", (event) => {
 
 //  -------- Removal of Listner (removeEventListener) -------------
 
-const button = document.getElementById("button");
+// const button = document.getElementById("button");
 
-button.addEventListener("click", buttonClickHandler)
-
-
-function buttonClickHandler(event) {
-    console.log("click me ")
+// button.addEventListener("click", buttonClickHandler)
 
 
-}
+// function buttonClickHandler(event) {
+//     console.log("click me ")
+
+
+// }
 
 
 // after 5 seconds ecexute this code
@@ -106,14 +106,14 @@ function buttonClickHandler(event) {
     
 //     button.removeEventListener("click", buttonClickHandler)
 
-button.removeEventListener("click", nameOfFunction?Handler)
+// button.removeEventListener("click", nameOfFunction?Handler)
 
-// }, 5000)
-
-
+// // }, 5000)
 
 
-document.addEventListener("unload", () => {
-    button.removeEventListener("click", buttonClickHandler)
-})
+
+
+// document.addEventListener("unload", () => {
+//     button.removeEventListener("click", buttonClickHandler)
+// })
 

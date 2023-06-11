@@ -99,7 +99,7 @@ Synchrnous means -performing a operation one by one - top to bottom in java & js
 
 
 // let arr = [1,2,3,4,5]
-// arr.fill(0, 3,5)
+// arr.fill(0, 3, 5)
 // (5) [1, 2, 3, 0, 0]
 
 

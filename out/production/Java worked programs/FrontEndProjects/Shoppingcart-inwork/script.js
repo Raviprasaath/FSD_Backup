@@ -257,7 +257,7 @@ function cartRemove() {
 
 // creating class as Product
 class Product {
-    productClass(id, title, price, image) {
+    constructor(id, title, price, image) {
         this.id = id;
         this.title = title;
         this.price = price;
@@ -266,61 +266,76 @@ class Product {
 }
 
 
-// storage class
-
-// window.Product = Product;
-
-// class Storage {
-//     static getProducts() {
-//         let products = productslist;
-//         if (localStorage.getItem("products")) {
-//             products = JSON.parse(localStorage.getItem("products"));
-//         } else {
-//             products = [];
-//         }
-//         return products;
-//     }
-//     static addtolocalstorage(e){
-//         let products = Storage.getProducts();
-//         products.push(e);
-//         localStorage.setItem("products", JSON.stringify(products));
-//     }
-//     static removeproduct(id) {
-//         let products = Storage.getProducts();
-//         products.forEach((p, i)=> {
-//             if (p.id === id) {
-//                 products.splice(i, 1);
-//             }
-//         });
-//     localStorage.setItem("products", JSON.stringify(productslist));
-//     }
-// }
-
-
-
-
 window.Product = Product;
 
 class Storage {
-  
-    static getProducts() {
+    static getproducts() {
         let products = [];
         if (localStorage.getItem("products")) {
             products = JSON.parse(localStorage.getItem("products"));
         }
         return products;
     }
-  
-    static addToLocalStorage(e) {
-        let products = Storage.getProducts();
+
+    static addtolocalstorage(e) {
+        let products = Storage.getproducts();
         products.push(e);
         localStorage.setItem("products", JSON.stringify(products));
     }
-  
-    static removeProduct(id) {
-        let products = Storage.getProducts();
-        products = products.filter((value) => value.id !== id);
+
+    static removeproduct(id) {
+        let products = Storage.getproducts();
+        products.forEach((value, index) => {
+            if (value.id == id) {
+                products.splice(index, 1);
+            }
+        });
         localStorage.setItem("products", JSON.stringify(products));
     }
-  }
-  
+}
+
+window.Storage=Storage
+
+
+let pccontainer = document.getElementsByClassName('pccontainer')[0];
+class Ui {
+    static displayproducts(e) {
+        pccontainer.innerHTML += `<div class="cartproduct">
+                        <div class="pnp">
+                            <div class="img">
+                                <img width="90px" src=" ${e.image} " alt="">
+                            </div>
+                            <div class="nameandprice">
+                                <p> ${e.title} </p>
+                                <p> ${e.price} </p>
+                            </div>
+                        </div>
+
+                        <button class="delete" productid=${e.id}>
+                            X
+                        </button>
+                    </div>`
+        
+    }
+    static displayproductsLS() {
+        let products = Storage.getproducts();
+        products.map((e) => {
+
+        pccontainer.innerHTML += `<div class="cartproduct">
+                        <div class="pnp">
+                            <div class="img">
+                                <img width="90px" src=" ${e.image} " alt="">
+                            </div>
+                            <div class="nameandprice">
+                                <p> ${e.title} </p>
+                                <p> ${e.price} </p>
+                            </div>
+                        </div>
+
+                        <button class="delete" productid=${e.id}>
+                            X
+                        </button>
+                    </div>`;
+        });
+    }
+}

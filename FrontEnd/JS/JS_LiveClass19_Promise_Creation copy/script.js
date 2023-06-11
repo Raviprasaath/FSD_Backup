@@ -43,11 +43,11 @@
 
 // let promise1 = new Promise((res, rej) => {
     
-//     // setTimeout(() => {
-//     //     res(1000);
-//     // }, 5000)
+//     setTimeout(() => {
+//         res(1000);
+//     }, 5000)
 
-//     rej("errro")
+//     // rej("errro")
     
 // })
 
@@ -59,7 +59,7 @@
     
 // })
 
-// user js file 
+// // user js file 
 
 // promise1.then(data => {
 //     console.log(data, "data after 5 sec")
@@ -164,21 +164,21 @@
 */
 
 
-// function callAServer1(string) {
+function callAServer1(string) {
 
-//     if(!string) {
-//         return Promise.resolve("Asdasdas")
-//     }
+    if(!string) {
+        return Promise.resolve("Asdasdas")
+    }
 
-//     fetch(string).then(data => {
-//         // beautiful things
-//     })
-// }
+    fetch(string).then(data => {
+        // beautiful things
+    })
+}
 
-// const res = callAServer1()
-// res.then(data => {
-//     console.log("callAServer1", data)
-// })
+const res = callAServer1()
+res.then(data => {
+    console.log("callAServer1", data)
+})
 
 
 

@@ -16,20 +16,18 @@ function randomColor() {
 let array = [];
 let randomArr;
 function colorfunc() {
-    for (let i=0; i<colourButtons.length; i++) {
+    colourButtons.forEach((elem)=> {
         let randomColor1 = randomColor();
-        let idVal =  (colourButtons[i].id);
-        let idn =  document.getElementById(idVal);
-        // currentListener();
-        
-        // let ansdis = array[randomValues(6)];
-        idn.style.backgroundColor = randomColor1;
+        elem.style.backgroundColor = randomColor1;
+
         array.push(randomColor1);
         randomArr = randomValues(6);
         let showingQ = array[randomArr];
-        colourValue.innerHTML = showingQ;
-    }
-    
+        colourValue.innerHTML = showingQ.substr(3);
+        // colourValue.innerHTML = showingQ;
+
+        console.log(randomColor1)
+    })
 }
 
 let count = 0;
@@ -44,8 +42,7 @@ function clikcingBtn() {
             console.log(randomArr)
             console.log(store)
 
-
-            if (store === randomArr) {
+            if (store == randomArr) {
                 ans.innerHTML = 'Correct';
             } else {
                 ans.innerHTML = 'Wrong';
@@ -55,11 +52,9 @@ function clikcingBtn() {
 }
 clikcingBtn();
 
-
-
-
-
 let resetButton = document.getElementById('resetButton');
 resetButton.addEventListener('click', ()=> {
     colorfunc();
+    ans.innerHTML=""
 });
+colorfunc()

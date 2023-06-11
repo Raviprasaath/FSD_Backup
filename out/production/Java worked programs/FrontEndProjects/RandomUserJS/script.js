@@ -1,11 +1,12 @@
 // javascript code goes here
+/*
 function getUser() {
     return fetch('https://randomuser.me/api/')
         .then(response => {
             return response.json();
         })
         .then(data => {
-            return data.results[0];
+            return data.results[0]; 
         })
 }
 const fullName = document.getElementById('full-name');
@@ -62,9 +63,9 @@ newUserBtn.addEventListener('click', function() {
 
 main();
 
-
+*/
 //------------------------------Method 2 by Async and Await-----------------------------
-/*
+
 
 async function getUser() {
     const response = await fetch('https://randomuser.me/api/');
@@ -123,5 +124,3 @@ newUserBtn.addEventListener('click', function() {
 })
 
 main();
-
-*/
