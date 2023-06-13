@@ -250,7 +250,6 @@ bar(); // global
 
 
 
-
 // 05-30-2023 - continuing
 /*
     Rule 3: Explicit binding....
